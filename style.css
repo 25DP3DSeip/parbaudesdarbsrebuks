@@ -1,1 +1,153 @@
-style.css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6e8e6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #553a41;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #bb7e8c;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 40px;
+    background-color: #3a6ea5;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #bb7e8c;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #553a41;
+}
+
+.product-section {
+    background-color: white;
+    margin: 24px 40px;
+    padding: 30px;
+}
+
+.product-section h2 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #e6e8e6;
+    padding-bottom: 12px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e6e8e6;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.img {
+    width: 100%;
+    height: 180px;
+    background-color: #d8d8d8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.old {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 6px;
+}
+
+.new {
+    color: #3a6ea5;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: #191919;
+}
+
+.search-section {
+    background-color: white;
+    margin: 24px 40px 0;
+    padding: 24px 30px;
+    display: flex;
+    gap: 12px;
+}
+
+.search-section input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 40px;
+    background-color: #191919;
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-top: 24px;
+}
